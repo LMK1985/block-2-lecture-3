@@ -1,0 +1,22 @@
+.wrapper2 {
+    display:grid;
+}
+.img {
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:2;
+    /*z-index indicated layer level. Larger numbers are on top. */
+    z-index:1;
+}
+/*overlapping useful for putting image captions on images */
+
+.imgtext {
+    /* can get this to work in correct soze >>> background-color: black;
+    opacity: 0.5; */
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:2;
+    z-index:2;
+}

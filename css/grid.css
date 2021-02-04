@@ -1,0 +1,22 @@
+/*The whole wrapper*/
+.wrapper {
+    display:grid;
+
+    /*Using the fr unit allows to create flexible grids, which is great for a responsive web;
+    The fr unit grows and shrinks in proportion of the available space;
+    It can be combined with fixed sizes;*/
+    grid-template-columns: 1fr 1fr 1fr; /*you can also use repeat for muliple FRs, eg. repeat(3, 1fr);*/
+    grid-auto-rows:minmax(100px, auto);
+    grid-row-gap: 3px;
+    grid-column-gap: 5px;
+}
+/*The wrapper contents like the divs */
+.wrapper div {
+    background-color:aqua;
+}
+#five {
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:auto;
+}
