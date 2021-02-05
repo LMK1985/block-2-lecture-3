@@ -1,5 +1,6 @@
 .wrapper2 {
     display:grid;
+    grid-template-columns: min-content auto;
 }
 .img {
     grid-column-start:1;
@@ -19,4 +20,9 @@
     grid-row-start:1;
     grid-row-end:2;
     z-index:2;
+    color:cornsilk;
+    background-color:black;
+    opacity: 0.5;
+    width:fit-content;
+    height:fit-content;
 }
